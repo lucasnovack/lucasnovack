@@ -1,6 +1,5 @@
 # 👋 Hi, I'm Lucas Novack
 
-I’m a Data Engineer from Brazil — raised between code, cars, football and music.  
 I work with data, but I also care about *why* things work the way they do, and how to make them better — clearer, more meaningful.
 
 ---
@@ -28,14 +27,6 @@ But more than tools, I bring **curiosity**, **collaboration**, and a bit of crea
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=flat&logo=postgresql&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat&logo=mongodb&logoColor=white)
-
----
-
-### 🌀 A bit more about me
-
-I like wandering minds and structured data.  
-I enjoy the silence of code, but also the noise of punk bands and football matches.  
-Some days I'm building data pipelines — others, I'm chasing a strange idea.
 
 ---
 

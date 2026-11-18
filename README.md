@@ -10,9 +10,11 @@ I build data systems, distributed pipelines, and performance-focused tools. I ca
 
 #### [siphon](https://github.com/lucasnovack/siphon)
 A lightweight, self-hosted data pipeline platform designed to replace Apache Spark in the Bronze layer of medallion lakehouses.
-* **Why it exists:** A typical Bronze ingestion is three lines (read SQL, write Parquet). Spark introduces 2–5 minutes of cold-start and ~4 GB of memory overhead; Siphon does the same job in under 5 seconds with ~200 MB of RAM.
-* **Core Capabilities:** Streaming extractions via Apache Arrow, automatic schema drift detection (SHA-256), built-in data quality gates, incremental watermarking, native Oracle thin-mode support, and encrypted credential storage.
-* **Stack:** Python, FastAPI, Celery, Redis, PostgreSQL, Apache Arrow, S3/MinIO.
+* **Why it exists:** A typical Bronze ingestion is three lines (read SQL, write Parquet). Spark introduces 2–5 minutes of cold-start and ~4 GB of memory overhead; Siphon executes the same workload in under 5 seconds with ~200 MB of RAM via zero-copy streaming.
+* **High-Throughput Core & Governance:** Streaming extractions via ConnectorX (Rust) & Apache Arrow, automatic schema/row-drift detection (SHA-256), per-column PII masking, end-to-end data lineage, and GDPR-compliant S3 data purge workflows.
+* **Multi-Protocol Ingestion:** Native support for SQL (PostgreSQL, MySQL, MSSQL, Oracle thin-mode), SFTP with staging/retry state-machines, and paginated HTTP/REST sources streaming into Snappy/ZSTD Parquet.
+* **Operational Control:** Self-hosted React/TypeScript management console with visual Pipeline Wizard and SQL editor, connection-level concurrency throttling, multi-priority Celery queues, OTEL distributed tracing, and Prometheus metrics.
+* **Stack:** Python (FastAPI, Celery), Rust (ConnectorX), React 18 (TypeScript, Tailwind, Radix UI), PostgreSQL, Redis, Apache Arrow, S3/MinIO, OpenTelemetry.
 
 #### [youmightlike](https://github.com/lucasnovack/youmightlike)
 Transmedia cultural recommendation engine connecting cinema, anime, TV series, music, games, and literature into a unified aesthetic affinity graph.
